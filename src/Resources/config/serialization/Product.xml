@@ -3,10 +3,13 @@
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="http://symfony.com/schema/dic/serializer-mapping https://symfony.com/schema/dic/serializer-mapping/serializer-mapping-1.0.xsd"
 >
-    <class name="Sylius\Component\Core\Model\Product">
+    <class name="BitBag\OpenMarketplace\Component\Product\Entity\Product">
         <attribute name="id">
             <group>shop:wishlist:read</group>
             <group>shop:wishlist:create</group>
+        </attribute>
+        <attribute name="vendor">
+            <group>shop:wishlist:read</group>
         </attribute>
     </class>
 </serializer>
